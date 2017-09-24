@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<project name="FSPublisherPlugin" basedir="." default="build-all">
+	<property file="build.properties" />
+	<target name="build-all" depends="clean, init, build_jar" />
+	<target name="clean">
+		<echo>Cleaning the ${build.dir} and ${target.dir} directories</echo>
+		<delete dir="${build.dir}" />
+		<delete dir="${target.dir}" />
+	</target>
+	<target name="init" depends="clean">
+		<echo>Creating the ${build.dir} and ${target.dir} directories</echo>
+		<mkdir dir="${build.dir}/lib" />
+		<mkdir dir="${target.dir}" />
+	</target>
+	<target name="build_jar">
+		<echo> Build FSPublisherPlugin jar</echo>
+		<jar destfile="${target.dir}/FS-Publisher.jar">
+			<fileset dir="${src.dir}" includes="**"  />
+			<manifest>
+				<attribute name="Main-Class" value="com.exlibris.dps.repository.plugin.registry" />
+			</manifest>
+		</jar>
+	</target>
+</project>
