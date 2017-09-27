@@ -5,7 +5,7 @@
   <pl:initParameters>
 	<fr:x_form xmlns:fr="http://com/exlibris/digitool/common/forms/xmlbeans">
 		<form_name>DBPublisherForm</form_name>
-		<description>FigShare Publisher Form</description>
+		<description>Figshare Publishing</description>
 		<grid_x>1</grid_x>
 		<md_format>1</md_format>
 		<x_fields>
