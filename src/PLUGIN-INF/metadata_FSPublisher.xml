@@ -1,10 +1,10 @@
 <pl:metadata-config xmlns:pl="http://www.exlibrisgroup.com/Plugins/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
   <pl:pluginTypeName>PublisherRegistryPlugin</pl:pluginTypeName>
-  <pl:deployName>FS-Publisher</pl:deployName>
+  <pl:deployName>FigShare-Publisher</pl:deployName>
   <pl:className>com.exlibris.dps.repository.plugin.registry.FSPublisherPlugin</pl:className>
   <pl:initParameters>
 	<fr:x_form xmlns:fr="http://com/exlibris/digitool/common/forms/xmlbeans">
-		<form_name>DBPublisherForm</form_name>
+		<form_name>FigsharePublisherForm</form_name>
 		<description>Figshare Publishing</description>
 		<grid_x>1</grid_x>
 		<md_format>1</md_format>
@@ -50,7 +50,7 @@
 		</x_fields>
 	</fr:x_form>
   </pl:initParameters>
-  <pl:description>FSPublisherPlugin</pl:description>
+  <pl:description>FigSharePublisherPlugin</pl:description>
   <pl:version>1</pl:version>
   <pl:materialType>DIGITAL</pl:materialType>
   <pl:module>Repository</pl:module>
