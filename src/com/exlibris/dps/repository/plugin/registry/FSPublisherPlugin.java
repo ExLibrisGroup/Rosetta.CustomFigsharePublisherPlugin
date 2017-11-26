@@ -37,7 +37,7 @@ public class FSPublisherPlugin implements PublisherRegistryPlugin{
 	private static final String VERSIONS = "/versions/";
 	private static final int OK_CODE = 205;
 	private static final int DELETE_CODE = 204;
-	private static final String SEPARATOR="\\.v";
+	private static final String SEPARATOR="/";
 
 	private static final String SUPPLEMENTARY = "/supplementary_fields";
 
